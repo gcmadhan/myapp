@@ -1,10 +1,5 @@
-import uvicorn
-from fastapi import FastAPI
+import streamlit as st
 
-
-app = FastAPI()
-
-@app.get("/{name}")
-
-async def post_method(name: str):
-    return {"message":name}
+st.text_input("Enter your Name")
+st.text_input("Enter Passord")
+st.button("Submit")
